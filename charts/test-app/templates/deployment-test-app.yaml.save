@@ -18,7 +18,7 @@ spec:
         release: {{ $.Release.Name }}
     spec:
       containers:
-      - name: test-api-gw
-        image: "zosiakomorowska/test-api-gw:{{ .Values.image.version }}"
+      - name: test-app
+        image: "zosiakomorowska/test-app:{{ .Values.image.version }}"
         ports:
         - containerPort: {{ .Values.port }}
