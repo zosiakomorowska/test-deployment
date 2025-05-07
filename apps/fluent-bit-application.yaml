@@ -6,7 +6,7 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: opensearch
+    namespace: fluent-bit
     server: https://kubernetes.default.svc
   project: default
   source:
